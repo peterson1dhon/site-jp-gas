@@ -1,0 +1,2 @@
+# site-jp-gas
+ design de site responsivo completo usando html5, css3, jquery, bootstrap 5 do zero, a principal característica deste site são: incrível menu de hambúrguer com efeito incrível, reprodutor de vídeo automático em segundo plano com controles, seção inicial responsiva com vídeo em segundo plano, seção de cartão especial responsiva com efeito de foco responsivo sobre a seção, seção de galeria com efeito de foco.
