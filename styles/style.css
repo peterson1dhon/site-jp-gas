@@ -36,6 +36,14 @@ body {
   z-index: 1000;
 }
 
+#header .fa-fire {
+  font-size: 5rem;
+  z-index: 10000;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
 #header .logo img {
   height: 7rem;
 }
@@ -70,5 +78,49 @@ body {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   min-height: 100vh;
+}
+
+.fa-times {
+  -webkit-transform: skew(-180deg) rotate(180deg);
+          transform: skew(-180deg) rotate(180deg);
+}
+
+@media (max-width: 768px) {
+  #header .fa-fire {
+    display: block;
+  }
+  #header nav {
+    position: fixed;
+    top: 0;
+    left: -120%;
+    height: 100vh;
+    width: 35rem;
+    background: #3333ff;
+  }
+  #header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+  }
+  #header nav ul li {
+    margin: 2rem 0;
+  }
+  #header nav ul li a {
+    font-size: 3.5rem;
+    border-radius: 5rem;
+  }
+  #header nav ul li a:hover {
+    padding: .5rem 7.5rem;
+    color: #333;
+    background: #ADD8E6;
+  }
+  #header .nav-toggle {
+    left: 0%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
