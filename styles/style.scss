@@ -207,8 +207,12 @@ body{
     h1{
       @include heading();
       color: $white;
-
     }
+
+      p{
+        color: #ccc;
+        font-size: 2rem;
+      }
   }
 }
 

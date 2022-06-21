@@ -212,6 +212,11 @@ body {
   color: #3333ff;
 }
 
+#special .heading p {
+  color: #ccc;
+  font-size: 2rem;
+}
+
 .fa-times {
   -webkit-transform: skew(-180deg) rotate(180deg);
           transform: skew(-180deg) rotate(180deg);
