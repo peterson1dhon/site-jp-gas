@@ -20,7 +20,7 @@ $lightBlue: #ADD8E6;
     content: '';
     position: absolute;
     top: 0; left: 0;
-    background: $lightBlue;
+    background: $blue;
     height: 100%;
     width: 0%;
     transition: .2s;
@@ -102,7 +102,7 @@ body{
 
 
           &:hover{
-            color: $lightBlue;
+            color: $blue;
           }
         }
       }
@@ -111,12 +111,12 @@ body{
 }
 
 #home{
-  background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.6));
+  // background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.3));
   min-height: 100vh;
 }
 
 #home{
-  background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.6));
+  background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.3));
   position: relative;
 
   .content{
@@ -214,7 +214,55 @@ body{
         font-size: 2rem;
       }
   }
+
+  .card-container{
+    width: 95%;
+    margin: 7rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card{
+      height: 45rem;
+      width: 35rem;
+      background: $white;
+      padding: .5rem;
+      margin: 1rem;
+      text-align: center;
+
+      img{
+        height: 70%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 2rem;
+      }
+
+      p{
+        font-size: 1.2rem;
+        margin: 1rem 0;
+      }
+
+      button{
+        @include button();
+        height: 3.5rem;
+        width: 14rem;
+        background: #333;
+        color: $white;
+
+        &:hover{
+          color: $white;
+        }
+      }
+      
+      &:hover{
+        transform: scale(.9);
+      }
+    }  
+  }
 }
+
+   
 
 
 
@@ -234,7 +282,9 @@ body{
   html{
     font-size: 50%;
   }
+
   #header{
+
     .fa-fire{
       display: block;
     }
@@ -270,6 +320,6 @@ body{
       .nav-toggle{
         left: 0%;
       }
-    
   }
+
 }

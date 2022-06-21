@@ -26,4 +26,13 @@ $(document).ready(function(){
     $('.vid3').css('display','block');
   });
 
+  $(window).om('scroll load',function(){
+      if($(window).scrollTop() > 10){
+        $('#header').addClass('header-active');
+      }else{
+        $('#header').removeClass('header-active');
+
+      }
+  });
+
 });
