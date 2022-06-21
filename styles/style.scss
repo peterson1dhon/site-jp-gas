@@ -2,6 +2,48 @@ $blue: #3333ff;
 $white: #fff;
 $lightBlue: #ADD8E6;
 
+@mixin button(){
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  &:before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    background: $lightBlue;
+    height: 100%;
+    width: 0%;
+    transition: .2s;
+    z-index: -1;
+  }
+
+  &:hover::before{
+    width: 100%;
+  }
+}
+
+@mixin heading() {
+  font-size: 4rem;
+  color: #000;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+
+  span{
+    color: $blue;
+  }
+}
+
+
 *{
   margin: 0; padding: 0;
   box-sizing: border-box;
@@ -73,6 +115,106 @@ body{
   min-height: 100vh;
 }
 
+#home{
+  background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.6));
+  position: relative;
+
+  .content{
+    h1{
+      font-size: 5rem;
+      font-family: 'lemonada', sans-serif;
+      font-weight: bolder;
+      text-shadow: .1rem .1rem .3rem $white;
+      color: $blue;
+    }
+
+    span{
+      font-family: 'lemonada', sans-serif;
+      text-shadow: .1rem .1rem .3rem $white;
+      color: $blue;
+    }
+
+    h2{
+      font-size: 3.5rem;
+      font-family: 'lemonada', sans-serif;
+      font-weight: bolder;
+      text-shadow: .1rem .1rem .3rem $white;
+      color: $white;
+      margin: 1rem 0;
+    }
+
+    p{
+      font-size: 1.6rem;
+      color: #ccc;
+    }
+
+    button{
+      @include button();
+      height: 4rem;
+      width: 14rem;
+      background: $white;
+    }
+  }
+
+  .video-container{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+
+    .vid{
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .vid1{
+      display: block;
+    }
+  }
+
+  .controls{
+    position: absolute;
+    bottom: 14%; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+
+    .dots{
+      height: 2rem;
+      width: 2rem;
+      cursor: pointer;
+      background: $white;
+      margin: 0 1rem;
+      border-radius: 50%;
+
+      &:hover{
+        background: $blue;
+      }
+    }
+  }
+}
+
+// special section / seção especial
+
+#special{
+  background: #000;
+  min-height: 100vh;
+
+  .heading{
+    h1{
+      @include heading();
+      color: $white;
+
+    }
+  }
+}
+
+
+
+
 
 
 
@@ -85,6 +227,9 @@ body{
 }
 // media queries 
 @media (max-width: 768px){
+  html{
+    font-size: 50%;
+  }
   #header{
     .fa-fire{
       display: block;
@@ -110,7 +255,7 @@ body{
 
               &:hover{
                 padding: .5rem 7.5rem;
-                color: #333;
+                color: $blue;
                 background: $lightBlue;
               }
             }
