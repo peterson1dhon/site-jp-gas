@@ -274,8 +274,45 @@ body{
   }
 }
 
-   
+// about section 
+#about{
+  .heading{
+    h1{
+      @include heading();
+    }
+  }
 
+  .content{
+    margin: 5rem auto;
+
+    p{
+      font-size: 1.5rem;
+
+      span{
+        color: $blue;
+        font-size: 3rem;
+      }
+    }
+
+    button{
+      @include button();
+      height: 4rem;
+      width: 14rem;
+      background: $blue;
+      color: $white;
+
+      &:hover{
+        color: $blue;
+      }
+    }
+  }
+
+  .image{
+    img{
+      height: 45vw;
+    }
+  }
+}
 
 
 
@@ -305,7 +342,7 @@ body{
         top: 0; left: -120%;
         height: 100vh;
         width: 35rem;
-        background: $blue;
+        background: $blue; opacity: 0.8;
 
         ul{
           flex-flow: column;
@@ -333,5 +370,12 @@ body{
         left: 0%;
       }
   }
-
+  #about{
+    .image{
+      text-align: center;
+      img{
+        height: 70vh;
+      }
+    }
+  }
 }

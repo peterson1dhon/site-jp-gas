@@ -308,6 +308,74 @@ body {
           transform: scale(0.9);
 }
 
+#about .heading h1 {
+  font-size: 4rem;
+  color: #000;
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+}
+
+#about .heading h1 span {
+  color: #3333ff;
+}
+
+#about .content {
+  margin: 5rem auto;
+}
+
+#about .content p {
+  font-size: 1.5rem;
+}
+
+#about .content p span {
+  color: #3333ff;
+  font-size: 3rem;
+}
+
+#about .content button {
+  outline: none;
+  border: none;
+  border-radius: 5rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 4rem;
+  width: 14rem;
+  background: #3333ff;
+  color: #fff;
+}
+
+#about .content button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+  width: 0%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  z-index: -1;
+}
+
+#about .content button:hover::before {
+  width: 100%;
+}
+
+#about .content button:hover {
+  color: #3333ff;
+}
+
+#about .image img {
+  height: 45vw;
+}
+
 .fa-times {
   -webkit-transform: skew(-180deg) rotate(180deg);
           transform: skew(-180deg) rotate(180deg);
@@ -327,6 +395,7 @@ body {
     height: 100vh;
     width: 35rem;
     background: #3333ff;
+    opacity: 0.8;
   }
   #header nav ul {
     -webkit-box-orient: vertical;
@@ -352,6 +421,12 @@ body {
   }
   #header .nav-toggle {
     left: 0%;
+  }
+  #about .image {
+    text-align: center;
+  }
+  #about .image img {
+    height: 70vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
