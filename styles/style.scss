@@ -395,9 +395,51 @@ body{
         transform: scale(1);
       }
     }
+  } 
+}
+
+// contact section 
+#contact{
+  min-height: 100vh;
+  width: 100vw;
+  background: url(../assets/images/bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.heading{
+  h1{
+    @include heading();
   }
 }
 
+  form{
+    background: $white;
+    padding-top: 2rem;
+    margin: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem #333;
+
+.inputBox{
+  position: relative;
+  text-align: center;
+
+  input, textarea{
+    outline: none;
+    border: .2rem solid #333;
+    border-radius: .2rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    background: none;
+    height: 4rem;
+    width: 90%;
+    font-size: 2rem;
+  }
+
+  textarea{
+
+  }
+}
 
 
 
