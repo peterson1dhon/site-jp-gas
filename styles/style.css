@@ -448,6 +448,8 @@ body {
       -ms-flex-flow: column;
           flex-flow: column;
   color: #fff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 #product .box-container .box .info h3 {
@@ -498,12 +500,26 @@ body {
   width: 100%;
 }
 
+#product .box-container .box .info button i {
+  margin-right: .5rem;
+}
+
+#product .box-container .box .info button:hover {
+  color: #3333ff;
+  font-size: 2.5rem;
+}
+
+#product .box-container .box:hover .info {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .fa-times {
   -webkit-transform: skew(-180deg) rotate(180deg);
           transform: skew(-180deg) rotate(180deg);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   html {
     font-size: 50%;
   }
