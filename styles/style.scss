@@ -27,8 +27,7 @@ $lightBlue: #ADD8E6;
     z-index: -1;
   }
     
-
-  &:hover::before{
+    &:hover::before{
     width: 100%;
   }
 }
@@ -368,11 +367,18 @@ body{
 
         p{
           font-size: 1.3rem;
-          margin: .7rem;
+          margin: 1rem .3rem;
 
           span{
             font-weight: bold;
           }
+        }
+
+        button{
+          @include button();
+          background: $blue;
+          height: 4rem;
+          width: 14rem;
         }
       }
     }
