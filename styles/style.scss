@@ -472,6 +472,44 @@ body{
 
 #footer{
   background: #333;
+
+  h1{
+    font-size: 2rem;
+    margin: 0;
+    padding: 2rem 0;
+    text-align: center;
+    color: $white;
+
+    span{
+      background: $white;
+      border-radius: .5rem;
+      color: $blue;
+    }
+  }
+
+  .brand{
+    text-align: center;
+    margin-top: 2rem;
+
+    a{
+      img{
+        width: 10rem;
+      }
+    }
+
+    .icons{
+      a{
+        font-size: 4rem;
+        margin: 2rem 1rem;
+        color: $white;
+        text-decoration: none;
+
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
+  }
 }
 
 
