@@ -40,6 +40,7 @@ $lightBlue: #ADD8E6;
 
   span{
     color: $blue;
+    text-shadow: 0 0 .45rem #fff;
   }
 }
 
@@ -102,7 +103,8 @@ body{
 
 
           &:hover{
-            color: $blue;
+            color: $lightBlue;
+            font-size: 2.5rem;
           }
         }
       }
@@ -111,7 +113,7 @@ body{
 }
 
 .header-active{
-  background: #333;
+  background: $blue;
   height: 7rem;
   box-shadow: .2rem 0 .5rem #000;
 
@@ -211,7 +213,7 @@ body{
 // special section / seção especial
 
 #special{
-  background: #000;
+  background: #333;
   min-height: 100vh;
 
   .heading{
@@ -399,7 +401,7 @@ body{
 }
 
 // contact section 
-#contact{
+#register{
   min-height: 100vh;
   width: 100vw;
   background: url(../assets/images/bg.jpg) no-repeat;
@@ -471,7 +473,7 @@ body{
 }
 
 #footer{
-  background: #333;
+  background: $blue;
 
   h1{
     font-size: 2rem;
@@ -505,8 +507,8 @@ body{
         text-decoration: none;
 
         &:hover{
-          color: $blue;
-          font-size: 5rem;
+          color: #ccc;
+          font-size: 6rem;
         }
       }
     }

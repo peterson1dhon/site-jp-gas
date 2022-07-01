@@ -71,11 +71,12 @@ body {
 }
 
 #header nav ul li a:hover {
-  color: #3333ff;
+  color: #ADD8E6;
+  font-size: 2.5rem;
 }
 
 .header-active {
-  background: #333;
+  background: #3333ff;
   height: 7rem;
   -webkit-box-shadow: .2rem 0 .5rem #000;
           box-shadow: .2rem 0 .5rem #000;
@@ -205,7 +206,7 @@ body {
 }
 
 #special {
-  background: #000;
+  background: #333;
   min-height: 100vh;
 }
 
@@ -219,6 +220,7 @@ body {
 
 #special .heading h1 span {
   color: #3333ff;
+  text-shadow: 0 0 .45rem #fff;
 }
 
 #special .heading p {
@@ -317,6 +319,7 @@ body {
 
 #about .heading h1 span {
   color: #3333ff;
+  text-shadow: 0 0 .45rem #fff;
 }
 
 #about .content {
@@ -390,6 +393,7 @@ body {
 
 #product .heading h1 span {
   color: #3333ff;
+  text-shadow: 0 0 .45rem #fff;
 }
 
 #product .box-container {
@@ -514,7 +518,7 @@ body {
           transform: scale(1);
 }
 
-#contact {
+#register {
   min-height: 100vh;
   width: 100vw;
   background: url(../assets/images/bg.jpg) no-repeat;
@@ -522,18 +526,19 @@ body {
   background-position: center;
 }
 
-#contact .heading h1 {
+#register .heading h1 {
   font-size: 4rem;
   color: #000;
   padding-top: 7rem;
   margin-bottom: 2rem;
 }
 
-#contact .heading h1 span {
+#register .heading h1 span {
   color: #3333ff;
+  text-shadow: 0 0 .45rem #fff;
 }
 
-#contact form {
+#register form {
   background: #fff;
   padding-top: 2rem;
   margin: 1rem 2rem;
@@ -542,12 +547,12 @@ body {
           box-shadow: 0 0 2rem #333;
 }
 
-#contact form .inputBox {
+#register form .inputBox {
   position: relative;
   text-align: center;
 }
 
-#contact form .inputBox input, #contact form .inputBox textarea {
+#register form .inputBox input, #register form .inputBox textarea {
   outline: none;
   border: .2rem solid #333;
   border-radius: .2rem;
@@ -559,28 +564,28 @@ body {
   font-size: 2rem;
 }
 
-#contact form .inputBox input:focus ~ h3,
-#contact form .inputBox input:valid ~ h3, #contact form .inputBox textarea:focus ~ h3,
-#contact form .inputBox textarea:valid ~ h3 {
+#register form .inputBox input:focus ~ h3,
+#register form .inputBox input:valid ~ h3, #register form .inputBox textarea:focus ~ h3,
+#register form .inputBox textarea:valid ~ h3 {
   font-size: 1.6rem;
   left: 6%;
   top: -.5rem;
   color: #ff3300;
 }
 
-#contact form .inputBox textarea {
+#register form .inputBox textarea {
   padding: 1rem;
   resize: none;
   height: 20rem;
 }
 
-#contact form .inputBox h3 {
+#register form .inputBox h3 {
   position: absolute;
   top: 3rem;
   left: 7%;
 }
 
-#contact form input[type="submit"] {
+#register form input[type="submit"] {
   outline: none;
   border: none;
   border-radius: 5rem;
@@ -600,7 +605,7 @@ body {
   background: #3333ff;
 }
 
-#contact form input[type="submit"]:before {
+#register form input[type="submit"]:before {
   content: '';
   position: absolute;
   top: 0;
@@ -613,16 +618,16 @@ body {
   z-index: -1;
 }
 
-#contact form input[type="submit"]:hover::before {
+#register form input[type="submit"]:hover::before {
   width: 100%;
 }
 
-#contact form input[type="submit"]:hover {
+#register form input[type="submit"]:hover {
   background: #333;
 }
 
 #footer {
-  background: #333;
+  background: #3333ff;
 }
 
 #footer h1 {
@@ -656,8 +661,8 @@ body {
 }
 
 #footer .brand .icons a:hover {
-  color: #3333ff;
-  font-size: 5rem;
+  color: #ccc;
+  font-size: 6rem;
 }
 
 #footer .footer-links {
