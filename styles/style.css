@@ -657,6 +657,50 @@ body {
 
 #footer .brand .icons a:hover {
   color: #3333ff;
+  font-size: 5rem;
+}
+
+#footer .footer-links {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin: 1rem 0;
+}
+
+#footer .footer-links h3 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+#footer .footer-links a {
+  color: #fff;
+  font-size: 1.7rem;
+  margin-bottom: .7rem;
+}
+
+#footer .footer-links a:hover {
+  font-size: 2rem;
+}
+
+#footer .footer-links i {
+  margin-right: 1rem;
+}
+
+#footer .letter h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 2.5rem;
+}
+
+#footer .letter img {
+  height: 18rem;
+  width: 36rem;
+  border-radius: 1rem;
 }
 
 .fa-times {

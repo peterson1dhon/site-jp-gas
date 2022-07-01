@@ -506,8 +506,47 @@ body{
 
         &:hover{
           color: $blue;
+          font-size: 5rem;
         }
       }
+    }
+  }
+
+  .footer-links{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    margin: 1rem 0;
+
+    h3{
+      font-size: 2.2rem;
+      color: $white;
+    }
+    a{
+      color: $white;
+      font-size: 1.7rem;
+      margin-bottom: .7rem;
+
+      &:hover{
+        font-size: 2rem;
+      }
+    }
+    i{
+      margin-right: 1rem;
+    }
+  }
+  
+
+  .letter{
+    h2{
+      font-size: 2rem;
+      color: $white;
+      margin-top: 2.5rem;
+    }
+    img{
+      height: 18rem;
+      width: 36rem;
+      border-radius: 1rem;
     }
   }
 }
