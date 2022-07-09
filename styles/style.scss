@@ -124,6 +124,27 @@ body{
   }
 }
 
+.whats{
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+
+  a{
+    button{
+      width: 7rem;
+      height: 7rem;
+      background: #25D366;
+      border-radius: 50%;
+      border: #fff;
+
+      i{
+        font-size: 5rem;
+        color: #fff;
+      }
+    }
+  }
+}
+
 #home{
   background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.3));
   position: relative;
