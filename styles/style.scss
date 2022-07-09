@@ -1,4 +1,4 @@
-$blue: #3333ff;
+$blue: #00008b;
 $white: #fff;
 $lightBlue: #ADD8E6;
 
@@ -33,14 +33,14 @@ $lightBlue: #ADD8E6;
 }
 
 @mixin heading() {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #000;
   padding-top: 7rem;
   margin-bottom: 2rem;
 
   span{
     color: $blue;
-    text-shadow: 0 0 .45rem #fff;
+    // text-shadow: 0 0 .45rem #fff;
   }
 }
 
@@ -103,7 +103,6 @@ body{
 
 
           &:hover{
-            color: $lightBlue;
             font-size: 2.5rem;
           }
         }
@@ -151,7 +150,7 @@ body{
 
   .content{
     h1{
-      font-size: 5rem;
+      font-size: 3rem;
       font-family: 'lemonada', sans-serif;
       font-weight: bolder;
       text-shadow: .1rem .1rem .3rem $white;
@@ -234,7 +233,7 @@ body{
 // special section / seção especial
 
 #special{
-  background: #333;
+  background: #ccc;
   min-height: 100vh;
 
   .heading{
@@ -281,7 +280,7 @@ body{
         @include button();
         height: 3.5rem;
         width: 14rem;
-        background: #333;
+        background: $blue;
         color: $white;
 
         &:hover{
