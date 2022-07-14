@@ -198,11 +198,12 @@ body{
     .vid{
       position: absolute;
       height: 100vh;
-      width: 100%;
+      width: 40px;
       object-fit: cover;
       display: none;
     }
-//
+  }
+
     .card{
       height: 45rem;
       width: 35rem;
@@ -229,7 +230,7 @@ body{
         width: 14rem;
         background: $blue;
         color: $white;
-/
+
         &:hover{
           color: $blue;
         }
@@ -239,7 +240,6 @@ body{
         transform: scale(.9);
       }
     }  
-  }
 }
 
 // about section 
