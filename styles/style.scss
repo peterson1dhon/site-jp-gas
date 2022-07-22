@@ -573,6 +573,13 @@ body{
         left: 0%;
       }
   }
+  #home{
+    .video-container{
+      img{
+        height: 100vh;
+      }
+    }
+  }
   #about{
     .image{
       text-align: center;
