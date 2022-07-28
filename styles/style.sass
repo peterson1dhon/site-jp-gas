@@ -143,7 +143,7 @@ body{
   }
 }
 
-#home{
+#home{      
   // background: linear-gradient(0deg, rgba(0,0,0,.6),rgba(0,0,0,.3));
   position: relative;
 
@@ -198,9 +198,31 @@ body{
     .vid{
       position: absolute;
       height: 100vh;
-      width: 40px;
+      width: 100%;
       object-fit: cover;
       display: none;
+    }
+    .vid1{
+      display: block;
+    }
+  }
+}
+
+// special section starts
+#special{
+
+  background: #fff;
+  min-height: 100vh;
+
+  .heading{
+    h1{
+      @include heading();
+      color: #fff;
+
+      p{
+        color: #fff;
+        font-size: 2rem;
+      }
     }
   }
 

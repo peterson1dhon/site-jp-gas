@@ -184,11 +184,9 @@ body {
 }
 
 #home .video-container .vid {
-  position: absolute;
+  /* position: absolute; */
   height: 100vh;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   display: none;
 }
 
@@ -238,7 +236,7 @@ body {
 }
 
 #special .heading p {
-  color: #ccc;
+  color: #fff;
   font-size: 2rem;
 }
 
